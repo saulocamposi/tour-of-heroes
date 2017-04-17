@@ -9,4 +9,8 @@ export class HeroService {
     return Promise.resolve(HEROES);
   }
 
+  // Old Method
+  getHero(id: Number): Promise<Hero>{
+    return this.getHeroes().then(heroes => heroes.find(hero => hero.id === id));
+  }
 }
