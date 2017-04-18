@@ -30,4 +30,7 @@ export class HeroDetailsComponent implements OnInit {
     this.location.back();
   }
 
+  save(): void {    
+  }
+
 }
