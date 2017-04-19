@@ -30,7 +30,9 @@ export class HeroDetailsComponent implements OnInit {
     this.location.back();
   }
 
-  save(): void {    
+  save(): void {
+    this.heroService.update(this.hero)
+      .then(() => this.goBack());
   }
 
 }
